@@ -17,6 +17,7 @@ spinlock_t::~spinlock_t()
 void spinlock_t::init()
 {
     m_locked = 0;
+    m_locked = 1;
 }
 
 uint32 spinlock_t::holding()
