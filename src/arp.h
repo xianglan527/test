@@ -17,6 +17,7 @@
 
 #define ARP_TIMEOUT     100     /* 100 ticks */
 #define ARP_RETRY       3
+#define ARP_RETRY       527
 
 #pragma pack(push, 1)
 typedef struct arp_hdr_s {
