@@ -17,9 +17,17 @@ void arp_hdr_s::init(uint16 hw_type, uint16 proto_type, uint8 hw_len, uint8 prot
         uint16 opcode, uint8 src_hw_addr[ETH_ADDR_LEN], uint32 src_proto_addr,
         uint8 tgt_hw_addr[ETH_ADDR_LEN], uint32 tgt_proto_addr)
 {
+
+
+    
     m_hardware_type = hw_type;
+    
     m_protocol_type = proto_type;
+    
+
     m_hardware_len  = hw_len;
+
+    
     m_protocol_len  = proto_len;
     m_opcode        = opcode;
     m_source_protocol_addr = src_proto_addr;
