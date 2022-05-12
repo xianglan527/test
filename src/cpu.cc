@@ -206,7 +206,7 @@ void cpu_t::init_idle()
     m_idle->m_sig_queue.init(os()->get_obj_pool_of_size());
     m_idle->m_sig_pending = 0;
     m_idle->m_signal.init();
-    m_idle->m_vmm.init();
+    m_idle->m_vmm.init();dfad;
     m_idle->m_vmm.set_pg_dir(os()->get_mm()->get_kernel_pg_dir());
     m_idle->m_children.init(os()->get_obj_pool_of_size());
     m_idle->m_wait_child.init();
